@@ -5,7 +5,7 @@ const Book = require("../models/Book");
 const mongoose = require("mongoose");
 const { response } = require("express");
 mongoose.connect(
-  `mongodb+srv://onkur24lal:baller24@cluster0.wb2m06w.mongodb.net/?retryWrites=true&w=majority`
+  `mongodb+srv://${process.env.MONGODB}@cluster0.wb2m06w.mongodb.net/?retryWrites=true&w=majority`
 );
 
 router.get("/", async (req, resp) => {
