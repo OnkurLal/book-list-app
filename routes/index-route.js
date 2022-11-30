@@ -4,6 +4,7 @@ const bookData = require("../book-data");
 const Book = require("../models/Book");
 const mongoose = require("mongoose");
 const { response } = require("express");
+require("dotenv").config();
 mongoose.connect(
   `mongodb+srv://${process.env.MONGODB}@cluster0.wb2m06w.mongodb.net/?retryWrites=true&w=majority`
 );
