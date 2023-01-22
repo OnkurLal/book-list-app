@@ -11,6 +11,7 @@ mongoose.connect(
 
 router.get("/", async (req, resp) => {
   const books = await Book.find();
+  console.log(books);
   resp.send(books);
 });
 router.get("/update/:id", async (req, resp) => {
@@ -58,7 +59,7 @@ router.post("/new", async (req, resp) => {
   resp.redirect("/");
 });
 
-router.get("/:id", async (req, resp) => {
+router.get("/view/:id", async (req, resp) => {
   const book = await Book.find({ isbn: req.params.id });
   resp.render("view", {
     isbn: book[0].isbn,
