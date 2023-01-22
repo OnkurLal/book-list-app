@@ -11,7 +11,6 @@ mongoose.connect(
 
 router.get("/", async (req, resp) => {
   const books = await Book.find();
-  console.log(books);
   resp.send(books);
 });
 router.get("/update/:id", async (req, resp) => {
