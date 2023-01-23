@@ -1,0 +1,39 @@
+## Book List Application
+
+Welcome to my Book List App! This app allows the user to view, update, add, and delete books. the weather around the world searching by city. It gives the user the current weather as well as a 12 hour forecast, which also utilizes a horizontal scrolling container.
+
+### Live - https://book-list-bkzl.onrender.com/
+
+### How To Use -
+
+- The home page is set to display all books in the database. Users can update book informatiom my going to the /update/id route where id is the books ISBN number. Users can also add a new book by going to the/new route ans adding in all the relevant information. Users may also delete books by going to the /delete/id route where id is the books ISBN number.
+
+### How to Download
+
+- Clone this repo
+  - git clone https://github.com/OnkurLal/book-list-app
+- Navigate to book-list-app
+  - cd book-list-app
+- Install dependencies
+  - npm install
+- Create a .env file and enter MongoDB Atlas credentials
+- Start development server
+  - node app.js
+
+### How To Deploy -
+
+Deploy using Render
+
+- Login into Render with github
+- Next select the repo you want to deploy
+- Add enviornment variable to project on Render
+- Add Render's servers IP address to whitelist on MongoDB Atlas
+- After selecting Rendor will automatially deploy your website.
+
+### Tech Stack Used
+
+- Javascript
+- NodeJS
+- Express
+- MongoDB Atlas
+- Mongoose
