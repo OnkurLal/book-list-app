@@ -4,9 +4,13 @@ Welcome to my Book List App! This app allows the user to view, update, add, and 
 
 ### Live - https://book-list-bkzl.onrender.com/
 
-### How To Use -
+### How To Use
 
-- The home page is set to display all books in the database. Users can update book informatiom my going to the /update/id route where id is the books ISBN number. Users can also add a new book by going to the/new route ans adding in all the relevant information. Users may also delete books by going to the /delete/id route where id is the books ISBN number.
+- The home page is set to display all books in the database. Below are the built in routes and the purpose they serve:
+  - /update/id - Users can update book informatiom utilizing this route, id is the books ISBN number.
+  - /new - Users can add a new book by going to this route and adding in all the relevant information.
+  - /delete/id - Users may also delete books by going to the using this route, id is the books ISBN number.
+  - /view/id - Users may see all the information on a specific book by using the books ISBN number for the id.
 
 ### How to Download
 
